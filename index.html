@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
   ╔══════════════════════════════════════════════════════════════════════╗
-  ║         INVITACIÓN DIGITAL - QUINCE AÑOS DE KAMILA           ║
+  ║         INVITACIÓN DIGITAL - QUINCE AÑOS DE SOFÍA RAMÍREZ           ║
   ║                                                                      ║
   ║  Este archivo es la versión en HTML puro del proyecto original       ║
   ║  que estaba hecho con React + TypeScript + Tailwind CSS.             ║
@@ -524,6 +524,8 @@
     .vestimenta-imagen {
       border-radius: 0.75rem;
       overflow: hidden;
+      max-width: 100%
+      height: auto;
     }
 
     .vestimenta-imagen img {
@@ -626,6 +628,12 @@
 .contenido{
   position:relative;
   z-index:1;
+}
+.regalo-imagen {
+border-radius: 0.02rem;
+      overflow: hidden;
+      max-height: 30px;
+      width: 30px;
 }
 
 /* =============================================
@@ -1230,7 +1238,6 @@ none; /* para que no bloquee los clics */
           <p class="texto-principal" style="margin-bottom:2rem">
             Tu presencia es muy importante para nosotros.
             Por favor confirma tu asistencia antes del 20 de abril.
-            En caso de no recibir respuesta antes de esa fecha, se asumirá que no podrás asistir.
           </p>
 
           <!--
@@ -1288,17 +1295,56 @@ none; /* para que no bloquee los clics */
       </div>
     </section>
     <!-- FIN COMPARTE FOTOS -->
+    
+    
 
 
     <!-- ┌─────────────────────────────────────────────────────┐
-         │  SECCIÓN 10: CÓDIGO DE VESTIMENTA                   │
+         │  SECCIÓN 9: PLAYLIST DE SPOTIFY                     │
+         └─────────────────────────────────────────────────────┘ 
+    <section class="seccion animar-entrada">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Playlist de la Fiesta</h2>
+        <div class="tarjeta playlist-iframe" style="padding:0; overflow:hidden;">
+          <!--
+            📝 CAMBIA el "src" por el embed de tu propia playlist.
+
+            Cómo obtener el código embed de Spotify:
+            1. Abre Spotify en el navegador
+            2. Ve a tu playlist
+            3. Haz clic en "..." (más opciones)
+            4. Selecciona "Compartir"
+            5. Copia el "Código de incrustación"
+            6. Extrae solo la URL del src=""
+
+            El ID de la playlist está en la URL después de /playlist/
+          
+          <iframe
+            style="border-radius:12px"
+            src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator"
+            width="100%"
+            height="380"
+            frameborder="0"
+            allowfullscreen
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section> -->
+    <!-- FIN PLAYLIST -->
+
+
+    <!-- ┌─────────────────────────────────────────────────────┐
+         │   CÓDIGO DE VESTIMENTA                              │
          └─────────────────────────────────────────────────────┘ -->
     <section class="seccion animar-entrada">
       <div class="contenedor">
-        <h2 class="titulo-seccion">Dress Code</h2>
+        
         <div class="tarjeta">
 
-          <!-- 📝 CAMBIA: imagen que ilustre el estilo de ropa -->
+          <!-- imagen  -->
+          <h2 class="titulo-seccion">Dress Code</h2>
           <div class="vestimenta-imagen">
             <img
               src="dress.png"
@@ -1307,15 +1353,46 @@ none; /* para que no bloquee los clics */
             />
           </div>
 
-          <!-- 📝 CAMBIA: descripción del dress code -->
-          <p class="vestimenta-texto" style="font-weight: bold;">Elegante&nbsp;</p>
+          <!-- descripción del dress code -->
+          <p class="vestimenta-texto">Formal&nbsp;</p>
           <p class="vestimenta-texto">Evitar colores azules, están reservados para la quinceañera.</p>
 
         </div>
       </div>
     </section>
     <!-- FIN DRESS CODE -->
+    
+    <section class="seccion animar-entrada">
+      <div class="contenedor">
+        <div class="tarjeta">
 
+          <h2 class="titulo-seccion">Mesa de regalos</h2>      
+            <img
+              style="height: 200px;"
+              src="regalo.png"
+              alt="Regalo"
+              loading="lazy"
+            />
+  
+
+          <!--
+            📝 CAMBIA: crea una carpeta en Google Drive, compártela y
+            pega el link aquí. Guía: Drive → Nueva carpeta → Compartir →
+            "Cualquier persona con el enlace puede editar"
+          -->
+          <a
+            href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51971291"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="boton-principal"
+          >
+            Ir a la mesa de regalos
+          </a>
+
+        </div>
+      </div>
+    </section>
+    
 
   <!-- ┌─────────────────────────────────────────────────────┐
      │  SECCIÓN: AGRADECIMIENTO                            │
